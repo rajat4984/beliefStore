@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playwrite+PE:wght@100..400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Arvo", serif;
+}
+
+/* -----------------GLOBAL-CLASSES---------------- */
+
+hr.divider {
+  border: none;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    rgba(238, 188, 81, 0),
+    rgba(238, 188, 81, 0.5),
+    rgba(238, 188, 81, 0)
+  );
+  margin: 20px 0;
+}
+
+body {
+  background: #22063ee3;
+  color: #e2e2e2;
+}
+
+.heading {
+  color: #eebc51;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  padding-bottom: 0;
+  font-weight: 600;
+}
+
+.brand_name {
+  font-size: 2.5rem;
+}
+
+.banner-section {
+  padding: 3%;
+}
+
+.banner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.banner img {
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.brand_logo {
+  width: 50%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+}
+
+/* ---------CATEGORY----------------- */
+
+.category-container h2 {
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.category .flex-item {
+  text-align: center;
+}
+
+.category .flex-item img {
+  width: 246px;
+  border-radius: 20px;
+}
+
+.category .subtitle {
+  padding: 1%;
+}
+
+/* -------------ABOUT-US---------- */
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+}
+
+.about-us .info {
+  align-self: baseline;
+  padding: 0 2%;
+  text-align: justify;
+}
+
+.about-us h2 {
+  font-size: 2.3rem;
+  margin-bottom: 1.5%;
+}
+
+.about-us p {
+  line-height: 1.6;
+  width: 90%;
+}
+
+.about-us img {
+  border-radius: 20px;
+  width: 40%;
+}
+
+.contact_us {
+  margin: 0 auto;
+  padding: 3%;
+  padding-top: 1%;
+  width: 100%;
+}
+
+.contact_us input,
+.contact_us textarea {
+  font-size: 14px;
+}
+
+.contact_us .container {
+  width: 95%;
+  background: white;
+  padding: 4% 2%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.contact_us .container img {
+  width: 40%;
+}
+
+.contact_us h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5%;
+}
+
+.contact_us input {
+  /* margin-bottom: 4%; */
+  width: 450px;
+  height: 50px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.contact_us form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact_us form button {
+  cursor: pointer;
+}
+
+.contact_us textarea {
+  padding: 2%;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid black;
+  font-size: 16px;
+}
+
+.contact_us button {
+  font-weight: 600;
+  background: #eebc51;
+  color: white;
+  padding: 3%;
+  width: 40%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3a2153;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eebc51;
+  border-radius: 10px;
+}
+
+@media (max-width: 468px) {
+  .banner {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact_us .container img {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .contact_us input {
+    height: 35px;
+    font-size: 14px;
+    width: 85%;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .brand_name {
+    font-size: 2rem;
+    margin: 2%;
+  }
+
+  .flex.category {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .about-us {
+    flex-direction: column-reverse;
+  }
+
+  .about-us p {
+    width: 100%;
+    line-height: 1.7;
+  }
+
+  .about-us .info {
+    padding: 0 3%;
+  }
+
+  .about-us img {
+    width: 100%;
+    margin: 5%;
+  }
+
+  .contact_us .container {
+    flex-direction: column;
+  }
+
+  .contact_us input {
+    width: initial;
+  }
+
+  .contact_us form {
+    width: 85%;
+  }
+}
