@@ -10,10 +10,15 @@ import banner3_m from "./assets/images/poster_m.jpg";
 import CategoryGrid from "./components/Category";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
+import whatsapp from "./assets/images/whatsapp.png";
 
 function App() {
   return (
     <>
+      <a href="https://wa.me/+919910871770" target="_blank">
+        <img src={whatsapp} className="whatsapp" />
+      </a>
       <Navbar />
       <Banner bannerImage={bannerImage_1} mobileBanner={banner1_m} />
       <CategoryGrid />
@@ -21,6 +26,7 @@ function App() {
       <AboutUs />
       <Banner bannerImage={bannerImage_3} mobileBanner={banner3_m} />
       <ContactUs />
+      <Footer />
     </>
   );
 }
